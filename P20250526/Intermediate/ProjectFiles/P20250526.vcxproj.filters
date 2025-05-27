@@ -36,6 +36,18 @@
     <ClCompile Include="..\..\Source\P20250526\MyAnimInstance.h">
       <Filter>Source\P20250526</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\P20250526\MyAnimNotify.cpp">
+      <Filter>Source\P20250526</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\P20250526\MyAnimNotify.h">
+      <Filter>Source\P20250526</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\P20250526\MyAnimNotifyState_PrintMessages.cpp">
+      <Filter>Source\P20250526</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\P20250526\MyAnimNotifyState_PrintMessages.h">
+      <Filter>Source\P20250526</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\P20250526\MyCharacter.cpp">
       <Filter>Source\P20250526</Filter>
     </ClCompile>

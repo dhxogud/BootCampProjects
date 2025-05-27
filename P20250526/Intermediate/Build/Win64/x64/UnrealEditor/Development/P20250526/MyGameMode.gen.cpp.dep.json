@@ -1,17 +1,17 @@
 {
     "Version": "1.2",
     "Data": {
-        "Source": "c:\\unrealengineproject\\p20250526\\intermediate\\build\\win64\\unrealeditor\\inc\\p20250526\\uht\\mygamemode.gen.cpp",
+        "Source": "c:\\unrealengineproject\\bootcampprojects\\p20250526\\intermediate\\build\\win64\\unrealeditor\\inc\\p20250526\\uht\\mygamemode.gen.cpp",
         "ProvidedModule": "",
-        "PCH": "c:\\unrealengineproject\\p20250526\\intermediate\\build\\win64\\x64\\p20250526editor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.inclorderunreal5_3.h.pch",
+        "PCH": "c:\\unrealengineproject\\bootcampprojects\\p20250526\\intermediate\\build\\win64\\x64\\p20250526editor\\development\\unrealed\\sharedpch.unrealed.project.valapi.cpp20.inclorderunreal5_3.h.pch",
         "Includes": [
-            "c:\\unrealengineproject\\p20250526\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\p20250526\\definitions.p20250526.h",
-            "c:\\unrealengineproject\\p20250526\\source\\p20250526\\mygamemode.h",
+            "c:\\unrealengineproject\\bootcampprojects\\p20250526\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\p20250526\\definitions.p20250526.h",
+            "c:\\unrealengineproject\\bootcampprojects\\p20250526\\source\\p20250526\\mygamemode.h",
             "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\engine\\classes\\gameframework\\gamemodebase.h",
             "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\engine\\classes\\engine\\serverstatreplicator.h",
             "c:\\program files\\epic games\\ue_5.5\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\serverstatreplicator.generated.h",
             "c:\\program files\\epic games\\ue_5.5\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\gamemodebase.generated.h",
-            "c:\\unrealengineproject\\p20250526\\intermediate\\build\\win64\\unrealeditor\\inc\\p20250526\\uht\\mygamemode.generated.h"
+            "c:\\unrealengineproject\\bootcampprojects\\p20250526\\intermediate\\build\\win64\\unrealeditor\\inc\\p20250526\\uht\\mygamemode.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

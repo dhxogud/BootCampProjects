@@ -40,6 +40,12 @@ public:
 	void OnJump(const FInputActionValue& Value);
 	void OnCrouch(const FInputActionValue& Value);
 	void OnReload(const FInputActionValue& Value);
+	void OnFire(const FInputActionValue& Value);
+	void OnEndFire(const FInputActionValue& Value);
+	void OnLeftLean(const FInputActionValue& Value);
+	void OnEndLeftLean(const FInputActionValue& Value);
+	void OnRightLean(const FInputActionValue& Value);
+	void OnEndRightLean(const FInputActionValue& Value);
 
 	UPROPERTY(VisibleAnywhere, Category = "Components", BlueprintReadOnly)
 	TObjectPtr<USpringArmComponent> CameraBoom;
@@ -66,6 +72,15 @@ public:
 	TObjectPtr<UInputAction> IA_Reload;
 
 	UPROPERTY(EditAnywhere, Category = "Input")
+	TObjectPtr<UInputAction> IA_Fire;
+
+	UPROPERTY(EditAnywhere, Category = "Input")
+	TObjectPtr<UInputAction> IA_LeftLean;
+
+	UPROPERTY(EditAnywhere, Category = "Input")
+	TObjectPtr<UInputAction> IA_RightLean;
+
+	UPROPERTY(EditAnywhere, Category = "Input")
 	TObjectPtr<UInputMappingContext> IMC_Default;
 
 	UPROPERTY(BlueprintReadOnly, Category = "Animations", EditAnywhere)
@@ -73,4 +88,14 @@ public:
 
 	UPROPERTY(BlueprintReadOnly, Category = "Animations", EditAnywhere)
 	TObjectPtr<UAnimMontage> AM_Hit;
+
+
+	UPROPERTY(BlueprintReadOnly, Category = "State", EditAnywhere)
+	uint8 bIsFire : 1;
+
+	UPROPERTY(BlueprintReadOnly, Category = "State", EditAnywhere)
+	uint8 bIsLeftLean : 1;
+
+	UPROPERTY(BlueprintReadOnly, Category = "State", EditAnywhere)
+	uint8 bIsRightLean : 1;
 };

@@ -1,12 +1,12 @@
 {
     "Version": "1.2",
     "Data": {
-        "Source": "c:\\unrealengineproject\\p20250526\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\p20250526\\singlefile\\myaniminstance.h.cpp",
+        "Source": "c:\\unrealengineproject\\bootcampprojects\\p20250526\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\p20250526\\singlefile\\myaniminstance.h.cpp",
         "ProvidedModule": "",
         "Includes": [
-            "c:\\unrealengineproject\\p20250526\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\p20250526\\definitions.p20250526.h",
-            "c:\\unrealengineproject\\p20250526\\intermediate\\build\\win64\\x64\\p20250526editor\\development\\unrealed\\shareddefinitions.unrealed.project.valapi.cpp20.inclorderunreal5_3.h",
-            "c:\\unrealengineproject\\p20250526\\source\\p20250526\\myaniminstance.h",
+            "c:\\unrealengineproject\\bootcampprojects\\p20250526\\intermediate\\build\\win64\\x64\\unrealeditor\\development\\p20250526\\definitions.p20250526.h",
+            "c:\\unrealengineproject\\bootcampprojects\\p20250526\\intermediate\\build\\win64\\x64\\p20250526editor\\development\\unrealed\\shareddefinitions.unrealed.project.valapi.cpp20.inclorderunreal5_3.h",
+            "c:\\unrealengineproject\\bootcampprojects\\p20250526\\source\\p20250526\\myaniminstance.h",
             "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\core\\public\\coreminimal.h",
             "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\core\\public\\coretypes.h",
             "c:\\program files\\epic games\\ue_5.5\\engine\\source\\runtime\\core\\public\\hal\\platform.h",
@@ -615,7 +615,7 @@
             "c:\\program files\\epic games\\ue_5.5\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\alphablend.generated.h",
             "c:\\program files\\epic games\\ue_5.5\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\animinertializationrequest.generated.h",
             "c:\\program files\\epic games\\ue_5.5\\engine\\intermediate\\build\\win64\\unrealeditor\\inc\\engine\\uht\\animinstance.generated.h",
-            "c:\\unrealengineproject\\p20250526\\intermediate\\build\\win64\\unrealeditor\\inc\\p20250526\\uht\\myaniminstance.generated.h"
+            "c:\\unrealengineproject\\bootcampprojects\\p20250526\\intermediate\\build\\win64\\unrealeditor\\inc\\p20250526\\uht\\myaniminstance.generated.h"
         ],
         "ImportedModules": [],
         "ImportedHeaderUnits": []

@@ -10,6 +10,7 @@
 #include "EnhancedInputSubsystems.h"
 #include "Kismet/KismetMathLibrary.h"
 #include "Kismet/GameplayStatics.h"
+#include "Animation/AnimInstance.h"
 
 // Sets default values
 AMyCharacter::AMyCharacter()
@@ -69,11 +70,28 @@ void AMyCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompone
 	if (UEIC)
 	{
 		UEIC->BindAction(IA_Move, ETriggerEvent::Triggered, this, &AMyCharacter::OnMove);
+
 		UEIC->BindAction(IA_Look, ETriggerEvent::Triggered, this, &AMyCharacter::OnLook);
+
 		UEIC->BindAction(IA_Jump, ETriggerEvent::Triggered, this, &AMyCharacter::OnJump);
+
 		UEIC->BindAction(IA_Zoom, ETriggerEvent::Triggered, this, &AMyCharacter::OnZoom);
+
 		UEIC->BindAction(IA_Crouch, ETriggerEvent::Triggered, this, &AMyCharacter::OnCrouch);
+
 		UEIC->BindAction(IA_Reload, ETriggerEvent::Triggered, this, &AMyCharacter::OnReload);
+
+		UEIC->BindAction(IA_Fire, ETriggerEvent::Triggered, this, &AMyCharacter::OnFire);
+
+		UEIC->BindAction(IA_Fire, ETriggerEvent::Completed, this, &AMyCharacter::OnEndFire);
+
+		UEIC->BindAction(IA_LeftLean, ETriggerEvent::Triggered, this, &AMyCharacter::OnLeftLean);
+
+		UEIC->BindAction(IA_LeftLean, ETriggerEvent::Completed, this, &AMyCharacter::OnEndLeftLean);
+
+		UEIC->BindAction(IA_RightLean, ETriggerEvent::Triggered, this, &AMyCharacter::OnRightLean);
+
+		UEIC->BindAction(IA_RightLean, ETriggerEvent::Completed, this, &AMyCharacter::OnEndRightLean);
 	}
 }
 
@@ -134,13 +152,46 @@ void AMyCharacter::OnReload(const FInputActionValue& Value)
 {
 	if (AM_Reload)
 	{
-		PlayAnimMontage(AM_Reload, 1.0f, TEXT("Rifle"));
+		if (!GetMesh()->GetAnimInstance()->Montage_IsPlaying(AM_Reload))
+		{
+			PlayAnimMontage(AM_Reload, 1.0f, TEXT("Rifle"));
+		}
 	}
 
-	if (AM_Hit)
-	{
-		int HitNo = FMath::RandRange(1, 4);
-		FString Temp = FString::Printf(TEXT("Hit_%d"), HitNo);
-		PlayAnimMontage(AM_Hit, 1.0f, *Temp);
-	}
+	//if (AM_Hit)
+	//{
+	//	int HitNo = FMath::RandRange(1, 4);
+	//	FString Temp = FString::Printf(TEXT("Hit_%d"), HitNo);
+	//	PlayAnimMontage(AM_Hit, 1.0f, *Temp);
+	//}
+}
+
+void AMyCharacter::OnFire(const FInputActionValue& Value)
+{
+	bIsFire = true;
+}
+
+void AMyCharacter::OnEndFire(const FInputActionValue& Value)
+{
+	bIsFire = false;
+}
+
+void AMyCharacter::OnLeftLean(const FInputActionValue& Value)
+{
+	bIsLeftLean = true;
+}
+
+void AMyCharacter::OnEndLeftLean(const FInputActionValue& Value)
+{
+	bIsLeftLean = false;
+}
+
+void AMyCharacter::OnRightLean(const FInputActionValue& Value)
+{
+	bIsRightLean = true;
+}
+
+void AMyCharacter::OnEndRightLean(const FInputActionValue& Value)
+{
+	bIsRightLean = false;
 }

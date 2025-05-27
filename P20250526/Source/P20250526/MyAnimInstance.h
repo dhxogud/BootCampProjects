@@ -25,4 +25,24 @@ public:
 
 	UPROPERTY(BlueprintReadOnly, Category = "State", VisibleAnywhere)
 	float Direction;
+
+	UPROPERTY(BlueprintReadOnly, Category = "State", EditAnywhere)
+	uint8 bIsFire : 1;
+
+	UPROPERTY(BlueprintReadOnly, Category = "State", EditAnywhere)
+	uint8 bIsLeftLean : 1;
+
+	UPROPERTY(BlueprintReadOnly, Category = "State", EditAnywhere)
+	uint8 bIsRightLean : 1;
+
+	UPROPERTY(BlueprintReadOnly, Category = "State", VisibleAnywhere)
+	float TargetSpineAngle;
+
+	UPROPERTY(BlueprintReadOnly, Category = "State", VisibleAnywhere)
+	float CurrentSpineAngle;
+
+	// Skeleton AnimNotify -> skeleton µû¶ó°¨
+	UFUNCTION()
+	void AnimNotify_HelloWroldCpp(UAnimNotify* Notify);
 };
+

@@ -20,6 +20,32 @@ void UMyAnimInstance::NativeUpdateAnimation(float DeltaSeconds)
 		bIsCrouched = !Pawn->CanCrouch();
 		Direction = UKismetAnimationLibrary::CalculateDirection(Pawn->GetCharacterMovement()->Velocity,
 			Pawn->GetActorRotation());
+		bIsFire = Pawn->bIsFire;
+		bIsLeftLean = Pawn->bIsLeftLean;
+		bIsRightLean = Pawn->bIsRightLean;
+
+		if (bIsLeftLean)
+		{
+			TargetSpineAngle = -30.0f;
+		}
+
+		if (bIsRightLean)
+		{
+			TargetSpineAngle = 30.0f;
+		}
+
+		if (!bIsLeftLean && !bIsRightLean)
+		{
+			TargetSpineAngle = 0.0f;
+		}
+
+		CurrentSpineAngle = FMath::FInterpTo(CurrentSpineAngle, TargetSpineAngle,
+			DeltaSeconds, 8.0f);
 	}
 
+}
+
+void UMyAnimInstance::AnimNotify_HelloWroldCpp(UAnimNotify* Notify)
+{
+	UE_LOG(LogTemp, Warning, TEXT("Hello Notify In Cpp!"));
 }
