@@ -1,0 +1,14 @@
+{
+    "Version": "1.2",
+    "Data": {
+        "Source": "c:\\unrealengineproject\\p20250521\\source\\p20250521\\p20250521.cpp",
+        "ProvidedModule": "",
+        "PCH": "c:\\unrealengineproject\\p20250521\\intermediate\\build\\win64\\x64\\p20250521\\development\\engine\\sharedpch.engine.project.valapi.cpp20.inclorderunreal5_3.h.pch",
+        "Includes": [
+            "c:\\unrealengineproject\\p20250521\\intermediate\\build\\win64\\x64\\unrealgame\\development\\p20250521\\definitions.p20250521.h",
+            "c:\\unrealengineproject\\p20250521\\source\\p20250521\\p20250521.h"
+        ],
+        "ImportedModules": [],
+        "ImportedHeaderUnits": []
+    }
+}

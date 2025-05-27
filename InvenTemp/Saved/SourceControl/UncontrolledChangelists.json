@@ -1,0 +1,45 @@
+{
+	"version": 1,
+	"changelists": [
+		{
+			"guid": "00000000000000000000000000000000",
+			"description": "Default Uncontrolled Changelist",
+			"files": [
+				"C:/UnrealEngineProject/InvenTemp/Content/StarterContent/Architecture/Floor_400x400.uasset",
+				"C:/UnrealEngineProject/InvenTemp/Content/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.uasset",
+				"C:/UnrealEngineProject/InvenTemp/Content/Inven/BP_ItemBase.uasset",
+				"C:/UnrealEngineProject/InvenTemp/Content/Inven/BP_InvenComponent.uasset",
+				"C:/UnrealEngineProject/InvenTemp/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/B/KV/2TRKW5FPQ7E1IXJW2YZ7YD.uasset",
+				"C:/UnrealEngineProject/InvenTemp/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/8/JU/6C9SPM9I0XC593MAV7C26J.uasset",
+				"C:/UnrealEngineProject/InvenTemp/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/7/FM/FGM40MEXGQIK5YBYQIC4K4.uasset",
+				"C:/UnrealEngineProject/InvenTemp/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/E/U6/H146ZCYI77FMHZXPXOWGLT.uasset",
+				"C:/UnrealEngineProject/InvenTemp/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/A/U7/A6OEHD1J0RSYQ8D7HPWAQ7.uasset",
+				"C:/UnrealEngineProject/InvenTemp/Content/Inven/Item/BP_ItemBase.uasset",
+				"C:/UnrealEngineProject/InvenTemp/Content/Inven/Item/ST_ItemSlot.uasset",
+				"C:/UnrealEngineProject/InvenTemp/Content/Inven/Item/ST_Item.uasset",
+				"C:/UnrealEngineProject/InvenTemp/Content/Inven/Item/DT_Item.uasset",
+				"C:/UnrealEngineProject/InvenTemp/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/0/AE/0YORZXFNMEN0TU8AQ5Y37Z.uasset",
+				"C:/UnrealEngineProject/InvenTemp/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/C/AE/TMB3MGG5HMYKG0G4KATEWM.uasset",
+				"C:/UnrealEngineProject/InvenTemp/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/3/EN/WT4MJX19OIS9QZ3UMEEWO1.uasset",
+				"C:/UnrealEngineProject/InvenTemp/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/9/75/2FLTHD2WF9CUO7NWG9Y3O2.uasset",
+				"C:/UnrealEngineProject/InvenTemp/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/9/B0/DCPDO9SAZAHA6XLWVYA9S0.uasset",
+				"C:/UnrealEngineProject/InvenTemp/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/9/D9/QPC70HW0OFC14S57US9ZPZ.uasset",
+				"C:/UnrealEngineProject/InvenTemp/Content/ThirdPerson/Blueprints/BP_ThirdPersonGameMode.uasset",
+				"C:/UnrealEngineProject/InvenTemp/Content/Inven/Widget/BP_Hud.uasset",
+				"C:/UnrealEngineProject/InvenTemp/Content/Inven/Widget/SlotWidget.uasset",
+				"C:/UnrealEngineProject/InvenTemp/Content/Inven/Widget/HudWidget.uasset",
+				"C:/UnrealEngineProject/InvenTemp/Content/ThirdPerson/Input/Actions/IA_Inven.uasset",
+				"C:/UnrealEngineProject/InvenTemp/Content/ThirdPerson/Input/IMC_Default.uasset",
+				"C:/UnrealEngineProject/InvenTemp/Content/Inven/Widget/WasteBasketWidget.uasset",
+				"C:/UnrealEngineProject/InvenTemp/Content/Inven/Widget/NewWidgetBlueprint.uasset",
+				"C:/UnrealEngineProject/InvenTemp/Content/Inven/Widget/InventoryWidget.uasset",
+				"C:/UnrealEngineProject/InvenTemp/Content/Inven/Widget/WasteBucketWidget.uasset",
+				"C:/UnrealEngineProject/InvenTemp/Content/Inven/DT_Item.uasset",
+				"C:/UnrealEngineProject/InvenTemp/Content/Inven/ST_Item.uasset",
+				"C:/UnrealEngineProject/InvenTemp/Content/Inven/ST_ItemSlot.uasset",
+				"C:/UnrealEngineProject/InvenTemp/Content/Inven/Widget/BP_HudWidget.uasset",
+				"C:/UnrealEngineProject/InvenTemp/Content/Inven/Widget/BP_SlotWidget.uasset"
+			]
+		}
+	]
+}
