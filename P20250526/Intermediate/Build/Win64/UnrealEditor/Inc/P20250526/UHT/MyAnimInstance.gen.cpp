@@ -123,6 +123,14 @@ struct Z_Construct_UClass_UMyAnimInstance_Statics
 		{ "Category", "State" },
 		{ "ModuleRelativePath", "MyAnimInstance.h" },
 	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_AimYaw_MetaData[] = {
+		{ "Category", "State" },
+		{ "ModuleRelativePath", "MyAnimInstance.h" },
+	};
+	static constexpr UECodeGen_Private::FMetaDataPairParam NewProp_AimPitch_MetaData[] = {
+		{ "Category", "State" },
+		{ "ModuleRelativePath", "MyAnimInstance.h" },
+	};
 #endif // WITH_METADATA
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_Speed;
 	static void NewProp_bIsCrouched_SetBit(void* Obj);
@@ -136,6 +144,8 @@ struct Z_Construct_UClass_UMyAnimInstance_Statics
 	static const UECodeGen_Private::FBoolPropertyParams NewProp_bIsRightLean;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_TargetSpineAngle;
 	static const UECodeGen_Private::FFloatPropertyParams NewProp_CurrentSpineAngle;
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_AimYaw;
+	static const UECodeGen_Private::FFloatPropertyParams NewProp_AimPitch;
 	static const UECodeGen_Private::FPropertyParamsBase* const PropPointers[];
 	static UObject* (*const DependentSingletons[])();
 	static constexpr FClassFunctionLinkInfo FuncInfo[] = {
@@ -171,6 +181,8 @@ void Z_Construct_UClass_UMyAnimInstance_Statics::NewProp_bIsRightLean_SetBit(voi
 const UECodeGen_Private::FBoolPropertyParams Z_Construct_UClass_UMyAnimInstance_Statics::NewProp_bIsRightLean = { "bIsRightLean", nullptr, (EPropertyFlags)0x0010000000000015, UECodeGen_Private::EPropertyGenFlags::Bool , RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, sizeof(uint8), sizeof(UMyAnimInstance), &Z_Construct_UClass_UMyAnimInstance_Statics::NewProp_bIsRightLean_SetBit, METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_bIsRightLean_MetaData), NewProp_bIsRightLean_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UMyAnimInstance_Statics::NewProp_TargetSpineAngle = { "TargetSpineAngle", nullptr, (EPropertyFlags)0x0010000000020015, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UMyAnimInstance, TargetSpineAngle), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_TargetSpineAngle_MetaData), NewProp_TargetSpineAngle_MetaData) };
 const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UMyAnimInstance_Statics::NewProp_CurrentSpineAngle = { "CurrentSpineAngle", nullptr, (EPropertyFlags)0x0010000000020015, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UMyAnimInstance, CurrentSpineAngle), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_CurrentSpineAngle_MetaData), NewProp_CurrentSpineAngle_MetaData) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UMyAnimInstance_Statics::NewProp_AimYaw = { "AimYaw", nullptr, (EPropertyFlags)0x0010000000020015, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UMyAnimInstance, AimYaw), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AimYaw_MetaData), NewProp_AimYaw_MetaData) };
+const UECodeGen_Private::FFloatPropertyParams Z_Construct_UClass_UMyAnimInstance_Statics::NewProp_AimPitch = { "AimPitch", nullptr, (EPropertyFlags)0x0010000000020015, UECodeGen_Private::EPropertyGenFlags::Float, RF_Public|RF_Transient|RF_MarkAsNative, nullptr, nullptr, 1, STRUCT_OFFSET(UMyAnimInstance, AimPitch), METADATA_PARAMS(UE_ARRAY_COUNT(NewProp_AimPitch_MetaData), NewProp_AimPitch_MetaData) };
 const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UMyAnimInstance_Statics::PropPointers[] = {
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UMyAnimInstance_Statics::NewProp_Speed,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UMyAnimInstance_Statics::NewProp_bIsCrouched,
@@ -180,6 +192,8 @@ const UECodeGen_Private::FPropertyParamsBase* const Z_Construct_UClass_UMyAnimIn
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UMyAnimInstance_Statics::NewProp_bIsRightLean,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UMyAnimInstance_Statics::NewProp_TargetSpineAngle,
 	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UMyAnimInstance_Statics::NewProp_CurrentSpineAngle,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UMyAnimInstance_Statics::NewProp_AimYaw,
+	(const UECodeGen_Private::FPropertyParamsBase*)&Z_Construct_UClass_UMyAnimInstance_Statics::NewProp_AimPitch,
 };
 static_assert(UE_ARRAY_COUNT(Z_Construct_UClass_UMyAnimInstance_Statics::PropPointers) < 2048);
 UObject* (*const Z_Construct_UClass_UMyAnimInstance_Statics::DependentSingletons[])() = {
@@ -223,10 +237,10 @@ UMyAnimInstance::~UMyAnimInstance() {}
 struct Z_CompiledInDeferFile_FID_UnrealEngineProject_BootCampProjects_P20250526_Source_P20250526_MyAnimInstance_h_Statics
 {
 	static constexpr FClassRegisterCompiledInInfo ClassInfo[] = {
-		{ Z_Construct_UClass_UMyAnimInstance, UMyAnimInstance::StaticClass, TEXT("UMyAnimInstance"), &Z_Registration_Info_UClass_UMyAnimInstance, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMyAnimInstance), 790418677U) },
+		{ Z_Construct_UClass_UMyAnimInstance, UMyAnimInstance::StaticClass, TEXT("UMyAnimInstance"), &Z_Registration_Info_UClass_UMyAnimInstance, CONSTRUCT_RELOAD_VERSION_INFO(FClassReloadVersionInfo, sizeof(UMyAnimInstance), 1123897923U) },
 	};
 };
-static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_UnrealEngineProject_BootCampProjects_P20250526_Source_P20250526_MyAnimInstance_h_3004188814(TEXT("/Script/P20250526"),
+static FRegisterCompiledInInfo Z_CompiledInDeferFile_FID_UnrealEngineProject_BootCampProjects_P20250526_Source_P20250526_MyAnimInstance_h_2435535292(TEXT("/Script/P20250526"),
 	Z_CompiledInDeferFile_FID_UnrealEngineProject_BootCampProjects_P20250526_Source_P20250526_MyAnimInstance_h_Statics::ClassInfo, UE_ARRAY_COUNT(Z_CompiledInDeferFile_FID_UnrealEngineProject_BootCampProjects_P20250526_Source_P20250526_MyAnimInstance_h_Statics::ClassInfo),
 	nullptr, 0,
 	nullptr, 0);

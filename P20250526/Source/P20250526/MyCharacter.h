@@ -53,6 +53,9 @@ public:
 	UPROPERTY(VisibleAnywhere, Category = "Components", BlueprintReadOnly)
 	TObjectPtr<UCameraComponent> Camera;
 
+	UPROPERTY(VisibleAnywhere, Category = "Components", BlueprintReadOnly)
+	TObjectPtr<USkeletalMeshComponent> Weapon;
+
 	UPROPERTY(EditAnywhere, Category = "Input")
 	TObjectPtr<UInputAction> IA_Jump;
 
@@ -88,7 +91,6 @@ public:
 
 	UPROPERTY(BlueprintReadOnly, Category = "Animations", EditAnywhere)
 	TObjectPtr<UAnimMontage> AM_Hit;
-
 
 	UPROPERTY(BlueprintReadOnly, Category = "State", EditAnywhere)
 	uint8 bIsFire : 1;

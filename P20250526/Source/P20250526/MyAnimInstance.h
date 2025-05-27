@@ -41,6 +41,12 @@ public:
 	UPROPERTY(BlueprintReadOnly, Category = "State", VisibleAnywhere)
 	float CurrentSpineAngle;
 
+	UPROPERTY(BlueprintReadOnly, Category = "State", VisibleAnywhere)
+	float AimYaw;
+
+	UPROPERTY(BlueprintReadOnly, Category = "State", VisibleAnywhere)
+	float AimPitch;
+
 	// Skeleton AnimNotify -> skeleton µû¶ó°¨
 	UFUNCTION()
 	void AnimNotify_HelloWroldCpp(UAnimNotify* Notify);
