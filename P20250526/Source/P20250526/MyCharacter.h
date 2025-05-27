@@ -68,5 +68,9 @@ public:
 	UPROPERTY(EditAnywhere, Category = "Input")
 	TObjectPtr<UInputMappingContext> IMC_Default;
 
+	UPROPERTY(BlueprintReadOnly, Category = "Animations", EditAnywhere)
+	TObjectPtr<UAnimMontage> AM_Reload;
 
+	UPROPERTY(BlueprintReadOnly, Category = "Animations", EditAnywhere)
+	TObjectPtr<UAnimMontage> AM_Hit;
 };

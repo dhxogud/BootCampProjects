@@ -94,11 +94,6 @@ void AMyCharacter::OnCrouch(const FInputActionValue& Value)
 	}
 }
 
-void AMyCharacter::OnReload(const FInputActionValue& Value)
-{
-	
-}
-
 void AMyCharacter::OnMove(const FInputActionValue& Value)
 {
 	FVector2D DirectionVector = Value.Get<FVector2D>();
@@ -111,6 +106,7 @@ void AMyCharacter::OnMove(const FInputActionValue& Value)
 
 	AddMovementInput(CameraForward, DirectionVector.Y);
 	AddMovementInput(CameraRight, DirectionVector.X);
+
 }
 
 void AMyCharacter::OnLook(const FInputActionValue& Value)
@@ -132,4 +128,19 @@ void AMyCharacter::OnZoom(const FInputActionValue& Value)
 	CameraBoom->TargetArmLength = FMath::Clamp(CameraBoom->TargetArmLength,
 		100.0f,
 		600.0f);
+}
+
+void AMyCharacter::OnReload(const FInputActionValue& Value)
+{
+	if (AM_Reload)
+	{
+		PlayAnimMontage(AM_Reload, 1.0f, TEXT("Rifle"));
+	}
+
+	if (AM_Hit)
+	{
+		int HitNo = FMath::RandRange(1, 4);
+		FString Temp = FString::Printf(TEXT("Hit_%d"), HitNo);
+		PlayAnimMontage(AM_Hit, 1.0f, *Temp);
+	}
 }
