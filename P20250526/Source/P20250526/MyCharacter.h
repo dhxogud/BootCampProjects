@@ -37,8 +37,9 @@ public:
 	void OnMove(const FInputActionValue& Value);
 	void OnLook(const FInputActionValue& Value);
 	void OnZoom(const FInputActionValue& Value);
-	void OnJump();
-	void OnCrouch();
+	void OnJump(const FInputActionValue& Value);
+	void OnCrouch(const FInputActionValue& Value);
+	void OnReload(const FInputActionValue& Value);
 
 	UPROPERTY(VisibleAnywhere, Category = "Components", BlueprintReadOnly)
 	TObjectPtr<USpringArmComponent> CameraBoom;
@@ -60,6 +61,9 @@ public:
 
 	UPROPERTY(EditAnywhere, Category = "Input")
 	TObjectPtr<UInputAction> IA_Crouch;
+
+	UPROPERTY(EditAnywhere, Category = "Input")
+	TObjectPtr<UInputAction> IA_Reload;
 
 	UPROPERTY(EditAnywhere, Category = "Input")
 	TObjectPtr<UInputMappingContext> IMC_Default;

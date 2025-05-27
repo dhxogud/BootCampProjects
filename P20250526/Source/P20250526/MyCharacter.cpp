@@ -73,15 +73,16 @@ void AMyCharacter::SetupPlayerInputComponent(UInputComponent* PlayerInputCompone
 		UEIC->BindAction(IA_Jump, ETriggerEvent::Triggered, this, &AMyCharacter::OnJump);
 		UEIC->BindAction(IA_Zoom, ETriggerEvent::Triggered, this, &AMyCharacter::OnZoom);
 		UEIC->BindAction(IA_Crouch, ETriggerEvent::Triggered, this, &AMyCharacter::OnCrouch);
+		UEIC->BindAction(IA_Reload, ETriggerEvent::Triggered, this, &AMyCharacter::OnReload);
 	}
 }
 
-void AMyCharacter::OnJump()
+void AMyCharacter::OnJump(const FInputActionValue& Value)
 {
 	Jump();
 }
 
-void AMyCharacter::OnCrouch()
+void AMyCharacter::OnCrouch(const FInputActionValue& Value)
 {
 	if (CanCrouch())
 	{
@@ -91,6 +92,11 @@ void AMyCharacter::OnCrouch()
 	{
 		UnCrouch();
 	}
+}
+
+void AMyCharacter::OnReload(const FInputActionValue& Value)
+{
+	
 }
 
 void AMyCharacter::OnMove(const FInputActionValue& Value)
