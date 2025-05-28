@@ -5,6 +5,8 @@
 			"guid": "00000000000000000000000000000000",
 			"description": "Default Uncontrolled Changelist",
 			"files": [
+				"C:/UnrealEngineProject/BootCampProjects/InvenTemp/Content/StarterContent/Architecture/Floor_400x400.uasset",
+				"C:/UnrealEngineProject/BootCampProjects/InvenTemp/Plugins/InvenPlugin/Content/SM_Chair.uasset",
 				"C:/UnrealEngineProject/InvenTemp/Content/StarterContent/Architecture/Floor_400x400.uasset",
 				"C:/UnrealEngineProject/InvenTemp/Content/ThirdPerson/Blueprints/BP_ThirdPersonCharacter.uasset",
 				"C:/UnrealEngineProject/InvenTemp/Content/Inven/BP_ItemBase.uasset",
