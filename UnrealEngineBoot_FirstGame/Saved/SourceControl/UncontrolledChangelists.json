@@ -14,7 +14,16 @@
 				"C:/UnrealEngineProject/BootCampProjects/UnrealEngineBoot_FirstGame/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/9/DO/ZWRRCBI050SK2JH2K94UTR.uasset",
 				"C:/UnrealEngineProject/BootCampProjects/UnrealEngineBoot_FirstGame/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/1/VN/S3A5CPIINI45ZRFNEBS70T.uasset",
 				"C:/UnrealEngineProject/BootCampProjects/UnrealEngineBoot_FirstGame/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/C/U2/NFXO9RM4MEJ5W1SVNT3CAK.uasset",
-				"C:/UnrealEngineProject/BootCampProjects/UnrealEngineBoot_FirstGame/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/A/AY/3508SZGZUJ6YLHWSKNR5SF.uasset"
+				"C:/UnrealEngineProject/BootCampProjects/UnrealEngineBoot_FirstGame/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/A/AY/3508SZGZUJ6YLHWSKNR5SF.uasset",
+				"C:/UnrealEngineProject/BootCampProjects/UnrealEngineBoot_FirstGame/Content/ThirdPerson/Blueprints/InvenWidget.uasset",
+				"C:/UnrealEngineProject/BootCampProjects/UnrealEngineBoot_FirstGame/Plugins/InvenPlugin/Content/Inven/Widget/HudWidget.uasset",
+				"C:/UnrealEngineProject/BootCampProjects/UnrealEngineBoot_FirstGame/Content/ThirdPerson/Blueprints/BP_ThirdPersonGameMode.uasset",
+				"C:/UnrealEngineProject/BootCampProjects/UnrealEngineBoot_FirstGame/Plugins/InvenPlugin/Content/Inven/Widget/SlotWidget.uasset",
+				"C:/UnrealEngineProject/BootCampProjects/UnrealEngineBoot_FirstGame/Plugins/InvenPlugin/Content/ThirdPerson/Blueprints/InvenWidget.uasset",
+				"C:/UnrealEngineProject/BootCampProjects/UnrealEngineBoot_FirstGame/Plugins/InvenPlugin/Content/Inven/Widget/BP_Hud.uasset",
+				"C:/UnrealEngineProject/BootCampProjects/UnrealEngineBoot_FirstGame/Plugins/InvenPlugin/Content/Inven/BP_InvenComponent.uasset",
+				"C:/UnrealEngineProject/BootCampProjects/UnrealEngineBoot_FirstGame/Plugins/InvenPlugin/Content/Inven/Item/ST_ItemSlot.uasset",
+				"C:/UnrealEngineProject/BootCampProjects/UnrealEngineBoot_FirstGame/Plugins/InvenPlugin/Content/Inven/Widget/WasteBasketWidget.uasset"
 			]
 		}
 	]
