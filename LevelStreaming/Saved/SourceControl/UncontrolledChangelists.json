@@ -1,0 +1,18 @@
+{
+	"version": 1,
+	"changelists": [
+		{
+			"guid": "00000000000000000000000000000000",
+			"description": "Default Uncontrolled Changelist",
+			"files": [
+				"C:/UnrealEngineProject/BootCampProjects/LevelStreaming/Content/ThirdPerson/Maps/ThirdPersonMap.umap",
+				"C:/UnrealEngineProject/BootCampProjects/LevelStreaming/Content/CoinGame/StaticMeshes/SM_Coin.uasset",
+				"C:/UnrealEngineProject/BootCampProjects/LevelStreaming/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/1/QD/I1PN56UXRAFOJRVZ5UN8ES.uasset",
+				"C:/UnrealEngineProject/BootCampProjects/LevelStreaming/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/0/EB/1KETUJS2V8OBXJMBB5DK6Q.uasset",
+				"C:/UnrealEngineProject/BootCampProjects/LevelStreaming/Content/CoinGame/Blueprints/BP_Coin.uasset",
+				"C:/UnrealEngineProject/BootCampProjects/LevelStreaming/Content/__ExternalActors__/ThirdPerson/Maps/ThirdPersonMap/9/VD/MNYJRW7PULTV66JAH4URS9.uasset",
+				"C:/UnrealEngineProject/LevelStreaming/Content/StarterContent/Architecture/Floor_400x400.uasset"
+			]
+		}
+	]
+}
