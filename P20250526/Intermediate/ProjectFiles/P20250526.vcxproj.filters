@@ -54,6 +54,18 @@
     <ClCompile Include="..\..\Source\P20250526\MyBTService_CheckPlayer.h">
       <Filter>Source\P20250526</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\P20250526\MyBTTask_CheckDistance.cpp">
+      <Filter>Source\P20250526</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\P20250526\MyBTTask_CheckDistance.h">
+      <Filter>Source\P20250526</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\P20250526\MyBTTask_NextPoint.cpp">
+      <Filter>Source\P20250526</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\P20250526\MyBTTask_NextPoint.h">
+      <Filter>Source\P20250526</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\P20250526\MyCharacter.cpp">
       <Filter>Source\P20250526</Filter>
     </ClCompile>

@@ -3,11 +3,20 @@
 
 #include "ZombieAIController.h"
 #include "ZombieCharacter.h"
-
+#include "BehaviorTree/BehaviorTreeComponent.h"
+#include "BehaviorTree/BlackboardComponent.h"
+#include "Kismet/GameplayStatics.h"
 
 AZombieAIController::AZombieAIController()
 {
 	PrimaryActorTick.bCanEverTick = true;
+}
+
+void AZombieAIController::BeginPlay()
+{
+	// only Single Play
+	BrainComponent->GetBlackboardComponent()->SetValueAsObject(TEXT("Player"),
+		UGameplayStatics::GetPlayerController(GetWorld(), 0)->GetPawn());
 }
 
 void AZombieAIController::Tick(float DeltaSeconds)
@@ -53,6 +62,7 @@ void AZombieAIController::OnPossess(APawn* InPawn)
 {
 	Super::OnPossess(InPawn);
 
+	PerceptionComponent;
 	AZombieCharacter* Zombie = Cast<AZombieCharacter>(GetPawn());
 
 	if (Zombie)

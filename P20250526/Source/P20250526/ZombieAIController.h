@@ -17,6 +17,8 @@ class P20250526_API AZombieAIController : public AAIController
 public:
 	AZombieAIController();
 
+	virtual void BeginPlay() override;
+
 	virtual void Tick(float DeltaSeconds) override;
 
 	virtual void OnPossess(APawn* InPawn) override;
