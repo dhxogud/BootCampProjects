@@ -48,6 +48,12 @@
     <ClCompile Include="..\..\Source\P20250526\MyAnimNotifyState_PrintMessages.h">
       <Filter>Source\P20250526</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\Source\P20250526\MyBTService_CheckPlayer.cpp">
+      <Filter>Source\P20250526</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\P20250526\MyBTService_CheckPlayer.h">
+      <Filter>Source\P20250526</Filter>
+    </ClCompile>
     <ClCompile Include="..\..\Source\P20250526\MyCharacter.cpp">
       <Filter>Source\P20250526</Filter>
     </ClCompile>
@@ -73,6 +79,18 @@
       <Filter>Source\P20250526</Filter>
     </ClCompile>
     <ClCompile Include="..\..\Source\P20250526\P20250526.h">
+      <Filter>Source\P20250526</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\P20250526\ZombieAIController.cpp">
+      <Filter>Source\P20250526</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\P20250526\ZombieAIController.h">
+      <Filter>Source\P20250526</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\P20250526\ZombieCharacter.cpp">
+      <Filter>Source\P20250526</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\P20250526\ZombieCharacter.h">
       <Filter>Source\P20250526</Filter>
     </ClCompile>
   </ItemGroup>
