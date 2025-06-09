@@ -1,0 +1,21 @@
+{
+	"version": 1,
+	"changelists": [
+		{
+			"guid": "00000000000000000000000000000000",
+			"description": "Default Uncontrolled Changelist",
+			"files": [
+				"C:/UnrealEngineProject/BootCampProjects/L20250609_Network/Content/Map/Title.umap",
+				"C:/UnrealEngineProject/BootCampProjects/L20250609_Network/Content/Blueprints/Title/BP_TitleGM.uasset",
+				"C:/UnrealEngineProject/BootCampProjects/L20250609_Network/Content/Blueprints/Title/BP_TitlePC.uasset",
+				"C:/UnrealEngineProject/BootCampProjects/L20250609_Network/Content/Blueprints/Title/WB_.uasset",
+				"C:/UnrealEngineProject/BootCampProjects/L20250609_Network/Content/Blueprints/Title/WB_Title.uasset",
+				"C:/UnrealEngineProject/BootCampProjects/L20250609_Network/Content/Blueprints/Title/WB_Item.uasset",
+				"C:/UnrealEngineProject/L20250609_Network/Content/Map/NewMap.umap",
+				"C:/UnrealEngineProject/L20250609_Network/Content/Blueprints/BP_GameMode.uasset",
+				"C:/UnrealEngineProject/L20250609_Network/Content/Blueprints/BP_GM.uasset",
+				"C:/UnrealEngineProject/L20250609_Network/Content/Blueprints/BP_PC.uasset"
+			]
+		}
+	]
+}

@@ -1,0 +1,14 @@
+{
+	"Targets": [
+		{
+			"Name": "L20250609_Network",
+			"Path": "..\\Source\\L20250609_Network.Target.cs",
+			"Type": "Game"
+		},
+		{
+			"Name": "L20250609_NetworkEditor",
+			"Path": "..\\Source\\L20250609_NetworkEditor.Target.cs",
+			"Type": "Editor"
+		}
+	]
+}
