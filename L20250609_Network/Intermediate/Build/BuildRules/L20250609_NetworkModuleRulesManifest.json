@@ -1,8 +1,0 @@
-{
-	"SourceFiles": [
-		"C:\\UnrealEngineProject\\BootCampProjects\\L20250609_Network\\Source\\L20250609_Network\\L20250609_Network.Build.cs",
-		"C:\\UnrealEngineProject\\BootCampProjects\\L20250609_Network\\Source\\L20250609_Network.Target.cs",
-		"C:\\UnrealEngineProject\\BootCampProjects\\L20250609_Network\\Source\\L20250609_NetworkEditor.Target.cs"
-	],
-	"EngineVersion": "5.5.4"
-}
