@@ -4,13 +4,13 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/PlayerState.h"
-#include "MyPlayerState.generated.h"
+#include "LobbyPS.generated.h"
 
 /**
  * 
  */
 UCLASS()
-class L20250609_NETWORK_API AMyPlayerState : public APlayerState
+class L20250609_NETWORK_API ALobbyPS : public APlayerState
 {
 	GENERATED_BODY()
 	

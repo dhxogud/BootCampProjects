@@ -2,7 +2,10 @@
 
 
 #include "LobbyGM.h"
-#include "MyGameStateBase.h"
+#include "LobbyGS.h"
+#include "Kismet/KismetSystemLibrary.h"
+#include "TimerManager.h"
+#include "Engine/World.h"
 
 void ALobbyGM::PreLogin(const FString& Options, const FString& Address, const FUniqueNetIdRepl& UniqueId, FString& ErrorMessage)
 {
@@ -45,9 +48,43 @@ void ALobbyGM::CheckConnenctCount()
 		ConnectCount++;
 	}
 
-	AMyGameStateBase* GS = GetGameState<AMyGameStateBase>();
+	ALobbyGS* GS = GetGameState<ALobbyGS>();
 	if (GS)
 	{
 		GS->ConnectCount = ConnectCount;
+		GS->OnRep_ConnectCount();
+	}
+}
+
+void ALobbyGM::BeginPlay()
+{
+	Super::BeginPlay();
+
+	//LeftTimeHandle = UKismetSystemLibrary::K2_SetTimer(this, TEXT("DecreaseTime"), 1.f, true);
+	//UKismetSystemLibrary::K2_ClearTimer(this, TEXT("DecreaseTime"));
+
+	//C++
+	GetWorld()->GetTimerManager().SetTimer(
+		LeftTimeHandle,
+		this,
+		&ALobbyGM::DecreaseTime,
+		1.0f,
+		true
+	);
+}
+
+void ALobbyGM::DecreaseTime()
+{
+	ALobbyGS* GS = GetGameState<ALobbyGS>();
+	if (GS)
+	{
+		GS->LeftTime--;
+		if (GS->LeftTime == 0)
+		{
+			//UKismetSystemLibrary::K2_ClearTimer(this, TEXT("DecreaseTime"));
+			GetWorld()->GetTimerManager().ClearTimer(LeftTimeHandle);
+		}
+		GS->LeftTime = FMath::Clamp(GS->LeftTime, 0,60);
+		GS->OnRep_LeftTime(); // Server, Client
 	}
 }

@@ -26,4 +26,11 @@ public:
 	virtual void Logout(AController* Exiting) override;
 
 	void CheckConnenctCount();
+
+	virtual void BeginPlay();
+
+	UFUNCTION()
+	void DecreaseTime();
+
+	FTimerHandle LeftTimeHandle;
 };

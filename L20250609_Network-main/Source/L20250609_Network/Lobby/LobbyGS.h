@@ -4,22 +4,29 @@
 
 #include "CoreMinimal.h"
 #include "GameFramework/GameStateBase.h"
-#include "MyGameStateBase.generated.h"
+#include "LobbyGS.generated.h"
 
 /**
  * 
  */
 UCLASS()
-class L20250609_NETWORK_API AMyGameStateBase : public AGameStateBase
+class L20250609_NETWORK_API ALobbyGS : public AGameStateBase
 {
 	GENERATED_BODY()
+
 public:
 	UPROPERTY(ReplicatedUsing = "OnRep_LeftTime")
 	uint16 LeftTime = 60;
 
-	UPROPERTY(Replicated)
+	UPROPERTY(ReplicatedUsing = OnRep_ConnectCount)
 	uint16 ConnectCount = 0;
 
 	virtual void GetLifetimeReplicatedProps(TArray<FLifetimeProperty> & OutLifetimeProps) const 
 		override;
+
+	UFUNCTION()
+	void OnRep_LeftTime();
+
+	UFUNCTION()
+	void OnRep_ConnectCount();
 };
