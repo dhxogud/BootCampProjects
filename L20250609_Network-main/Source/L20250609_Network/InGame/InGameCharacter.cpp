@@ -115,6 +115,7 @@ void AInGameCharacter::C2S_Fire_Implementation(const FVector& SpawnPosition, con
 		FLinearColor::Green,
 		2.0f
 	);
+
 	if (bResult)
 	{
 		UE_LOG(LogTemp, Warning, TEXT("Hit %s"), *OutHit.GetActor()->GetName());
